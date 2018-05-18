@@ -1,13 +1,13 @@
 ---
 layout: post
 title:      "Everything is Better With Javascript"
-date:       2018-05-18 00:50:51 +0000
+date:       2018-05-17 20:50:52 -0400
 permalink:  everything_is_better_with_javascript
 ---
 
 When I was coding my [Rails app](https://github.com/rockychiang/manga_list_app), it always felt like something was missing. The app was great and interactive but some features felt clunky and slow. Due to the lack of javascript, the app had to reload the page every time the user clicks a button to submit a form. So when I started the Rails with Jquery Front End, I knew exactly which features I would like to update. 
 
-To give some background information, the Manga List app lets the user track their manga collection, record progresses for each manga in their collection and add review & rating to each manga. So on the user profile page as seen below there is a table that tracks the user's collection and their status (progress) for each manga. Previously I programmed the field so that it would submit the form every time there is a change in the text field. However, it would submit the form and then reloads the page every time this happens, which makes for a clunky interaction. So one of the thing that I did in this project is updating this feature to send the request via ajax instead.
+To give some background information, the Manga List app lets the user track their manga collection, record progresses for each manga in their collection and add review & rating to each manga. So on the user profile page (as seen below) there is a table that tracks the user's collection and their status (progress) for each manga. Previously I programmed the field so that it would submit the form every time there is a change in the text field. However, it would submit the form and then reloads the page every time this happens, which makes for a clunky interaction. So one of the thing that I did in this project is updating this feature to send the request via ajax instead.
 
 <a href="https://imgur.com/yXd5fgF"><img src="https://i.imgur.com/yXd5fgF.png" title="source: imgur.com" /></a>
 
