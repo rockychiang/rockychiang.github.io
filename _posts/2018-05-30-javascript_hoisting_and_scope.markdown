@@ -39,14 +39,14 @@ logFruit();
 
 Notice that inside the function, the *fruit* variable declaration is moved to before the first console log, but nothing is assigned to it. This is what **hoisting** is in javascript, it is the movement of all variable and function declaration (not the assignment) to the top of the containing **scope** (in this case the scope is the *logFruit* function). 
 
-### Hoisting Functions
+## Hoisting Functions
 
 
 Another example of hoisting is as follows: 
 
 ```
-dog();                           // first function
-cat();                           // second function
+dog();                           // first function called
+cat();                           // second function called
 
 function dog() {
       console.log("dog");
@@ -57,7 +57,7 @@ var cat = function() {
 }
 ```
 
-In this example the first function will run successfully and log "dog" into the console, however, the second function will not run and instead it will give a TypeError. This might be confusing at first but it is made clear when we see how javascript actually reads the above code in the following way:  
+In this example when the first function is called it will successfully log "dog" into the console, however, when the second function called it will not run and instead will give a TypeError. This might be confusing at first but it is made clear when we see how javascript actually reads the above code in the following way:  
 
 ```
 function dog() {                 // function declaration is hoisted along with the function body
@@ -76,7 +76,7 @@ cat = function() {               // function definition stays in the same place 
 
 Here we see one of the differences between function declaration and function expression. When **function declaration** are hoisted the function body is also hoisted to the top of the scope (as seen with the *dog* function above). Whereas in **function expression** only the variable declaration is hoisted but the function definition stays in the same place (as seen with the *cat* function).
 
-### ECMAScript 2015 (ES6)
+## ECMAScript 2015 (ES6)
 
 
 ES6 introduces two new ways for developers to declare their variables in javascript: `let` and `const`. These two keywords behave similarly to `var` in that they will get hoisted to the top of the scope when the code is executed. However, one of the key difference between them appears when they get hoisted. When `var` is hoisted it is initialized with the value "undefined" whereas `let` and `const` are uninitialized. Therefore when variables that were declared using `let` and `const` are referenced prior to the declaration they will return a "ReferenceError" instead of "undefined" (as shown in the code snippet below). 
