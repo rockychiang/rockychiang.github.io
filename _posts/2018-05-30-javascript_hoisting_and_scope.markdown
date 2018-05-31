@@ -115,6 +115,6 @@ console.log(elf);                // This will log "Elrond"
 console.log(dwarf);              // This will log "Durin"
 ```
 
-Here we see the difference in **scope** between `var` and `let`/`const`. The scope of `var` variable declaration is global, which is why we see the second var declaration, the one inside the `if` block, overwrites the first one resulting in "Aragorn" getting logged twice in the console but not "Isildur". On the other hand, the scope of both `let` and `const` is local. This essentially means that the first `let`/`const` declaration are separate variables from the second `let`/`const` variables resulting in both "Legolas", "Elrond" and "Gimli", "Durin" being logged to the console.  
+Here we see the difference in **scope** between `var` and `let`/`const`. The scope of `var` variable declaration is global, which is why we see the second `var` declaration, the one inside the `if` block, overwrites the first one resulting in "Aragorn" getting logged twice in the console but not "Isildur". On the other hand, the scope of both `let` and `const` is local. This essentially means that the first `let`/`const` declaration are separate variables from the second `let`/`const` variables resulting in both "Legolas", "Elrond" and "Gimli", "Durin" being logged to the console.  
 
 Hopefully, this article helped clear some confusion regarding hoisting and scope in javascript. If you think that this article contains any errors, please let me know. Once again thank you for reading and until next time.
