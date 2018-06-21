@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Rails + React + Redux = Sudoku?"
-date:       2018-06-19 21:04:48 +0000
+date:       2018-06-19 17:04:49 -0400
 permalink:  rails_react_redux_sudoku
 ---
 
@@ -18,4 +18,4 @@ Other than the board and the userform, the game component also have three button
 
 With the board component completed the only thing left to do is to create the leaderboard component. It is a simple component that fetches the top ten games from the database and show it in a table format. It uses the `thunk` middleware to make use of an async actions to update the state when recieving data from the database. 
 
-While at this point the app is up and running, I plan to further improve it in the neer future by adding other features such as multiple difficulties and a save and load system. To follow the progress of my app please check out my [app](https://github.com/rockychiang/) here or watch a [demo](https://youtu.be/Jc8HQQBW-_c) of my app to see how it works. Once again thank you for reading and until next time.
+While at this point the app is up and running, I plan to further improve it in the neer future by adding other features such as multiple difficulties and a save and load system. Check out my [here](https://react-sudoku-app.herokuapp.com/leaderboard) or follow its progress at my github [repo](https://github.com/rockychiang/)  or watch a [demo](https://youtu.be/Jc8HQQBW-_c) of my app to see how it works. Once again thank you for reading and until next time.
